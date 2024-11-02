@@ -1,20 +1,21 @@
-# CLI App with Cliffy and Deno
+# CLI App
 
-A simple CLI application built using [Cliffy](https://cliffy.io) and Deno, designed to demonstrate basic command functionality.
+A simple command-line interface (CLI) application built with Deno and the Cliffy framework.
 
 ## Features
 
-- **Greet Command**: Outputs a personalized greeting.
+- **Greet Someone**: Enter a name to receive a personalized greeting.
+- **Show Help**: Displays available commands.
+- **Exit**: Closes the application.
 
 ## Installation
 
-1. Install [Deno](https://deno.land/).
-2. Clone this repository.
+Make sure you have [Deno](https://deno.land/) installed. Then clone this repository and navigate to the project directory.
 
-## Usage
+## Running the App
 
-Run the `greet` command to display a greeting:
+To start the application, use:
 
 ```bash
-deno run --allow-net cli.ts greet <name>
+deno run --allow-net cli.ts
 ```
