@@ -17,5 +17,5 @@ Make sure you have [Deno](https://deno.land/) installed. Then clone this reposit
 To start the application, use:
 
 ```bash
-deno run --allow-net cli.ts
+deno task start
 ```
