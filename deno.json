@@ -1,0 +1,13 @@
+{
+  "tasks": {
+    "start": "deno run --allow-read --allow-write --allow-env src/cli.ts",
+    "dev": "deno run --watch --allow-read --allow-write --allow-env src/cli.ts",
+    "compile": "deno compile --allow-read --allow-write --allow-env src/cli.ts"
+  },
+  "imports": {
+    "@commands/": "./src/commands/",
+    "@utils/": "./src/utils/",
+    "@models/": "./src/models/",
+    "@services/": "./src/services/"
+  }
+}
