@@ -1,5 +1,35 @@
 {
   "version": "4",
+  "specifiers": {
+    "npm:chai@^5.1.2": "5.1.2"
+  },
+  "npm": {
+    "assertion-error@2.0.1": {
+      "integrity": "sha512-Izi8RQcffqCeNVgFigKli1ssklIbpHnCYc6AknXGYoB6grJqyeby7jv12JUQgmTAnIDnbck1uxksT4dzN3PWBA=="
+    },
+    "chai@5.1.2": {
+      "integrity": "sha512-aGtmf24DW6MLHHG5gCx4zaI3uBq3KRtxeVs0DjFH6Z0rDNbsvTxFASFvdj79pxjxZ8/5u3PIiN3IwEIQkiiuPw==",
+      "dependencies": [
+        "assertion-error",
+        "check-error",
+        "deep-eql",
+        "loupe",
+        "pathval"
+      ]
+    },
+    "check-error@2.1.1": {
+      "integrity": "sha512-OAlb+T7V4Op9OwdkjmguYRqncdlx5JiofwOAUkmTF+jNdHwzTaTs4sRAGpzLF3oOz5xAyDGrPgeIDFQmDOTiJw=="
+    },
+    "deep-eql@5.0.2": {
+      "integrity": "sha512-h5k/5U50IJJFpzfL6nO9jaaumfjO/f2NjK/oYB2Djzm4p9L+3T9qWpZqZ2hAbLPuuYq9wrU08WQyBTL5GbPk5Q=="
+    },
+    "loupe@3.1.2": {
+      "integrity": "sha512-23I4pFZHmAemUnz8WZXbYRSKYj801VDaNv9ETuMh7IrMc7VuVVSo+Z9iLE3ni30+U48iDWfi30d3twAXBYmnCg=="
+    },
+    "pathval@2.0.0": {
+      "integrity": "sha512-vE7JKRyES09KiunauX7nd2Q9/L7lhok4smP9RZTDeD4MVs72Dp2qNFVz39Nz5a0FVEW0BJR6C0DYrq6unoziZA=="
+    }
+  },
   "remote": {
     "https://deno.land/std@0.221.0/assert/assert.ts": "bec068b2fccdd434c138a555b19a2c2393b71dfaada02b7d568a01541e67cdc5",
     "https://deno.land/std@0.221.0/assert/assertion_error.ts": "9f689a101ee586c4ce92f52fa7ddd362e86434ffdf1f848e45987dc7689976b8",
@@ -91,6 +121,7 @@
     "https://deno.land/std@0.221.0/text/levenshtein_distance.ts": "24be5cc88326bbba83ca7c1ea89259af0050cffda2817ff3a6d240ad6495eae2",
     "https://deno.land/x/cliffy@v1.0.0-rc.4/ansi/ansi_escapes.ts": "193b3c3a4e520274bd8322ca4cab1c3ce38070bed1898cb2ade12a585dddd7c9",
     "https://deno.land/x/cliffy@v1.0.0-rc.4/ansi/chain.ts": "eca61b1b64cad7b9799490c12c7aa5538d0f63ac65a73ddb6acac8b35f0a5323",
+    "https://deno.land/x/cliffy@v1.0.0-rc.4/ansi/colors.ts": "21c6702197d0871c700279d22fc54e4b15152be4ece1f433d6714595b018d265",
     "https://deno.land/x/cliffy@v1.0.0-rc.4/ansi/cursor_position.ts": "7a07410b312885db92ada9ecab095db0ff72ffe339b4e2d31e8c705f2c60c7fa",
     "https://deno.land/x/cliffy@v1.0.0-rc.4/ansi/deps.ts": "4d93b041735f4967fa56c7aeb6be490c07522fb81c419f5fe3bef6b72190db8c",
     "https://deno.land/x/cliffy@v1.0.0-rc.4/ansi/tty.ts": "a42ec713ff18186492c4b5184039d4f54174065773fa5833330b543c53bb4d79",
@@ -173,5 +204,10 @@
     "https://deno.land/x/cliffy@v1.0.0-rc.4/table/deps.ts": "cbb896e8d7a6b5e3c2b9dda7d16638c202d9b46eb738c2dae1fa9480d8091486",
     "https://deno.land/x/cliffy@v1.0.0-rc.4/table/row.ts": "79eb1468aafdd951e5963898cdafe0752d4ab4c519d5f847f3d8ecb8fe857d4f",
     "https://deno.land/x/cliffy@v1.0.0-rc.4/table/table.ts": "298671e72e61f1ab18b42ae36643181993f79e29b39dc411fdc6ffd53aa04684"
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:chai@^5.1.2"
+    ]
   }
 }

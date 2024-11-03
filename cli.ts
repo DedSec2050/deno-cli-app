@@ -4,6 +4,7 @@ import {
   Select,
   prompt,
 } from "https://deno.land/x/cliffy@v1.0.0-rc.4/prompt/mod.ts";
+import { colors } from "https://deno.land/x/cliffy@v1.0.0-rc.4/ansi/colors.ts";
 
 const command = new Command()
   .name("cli")
@@ -20,10 +21,14 @@ const command = new Command()
   });
 
 while (true) {
+  console.log("");
   const value = await Select.prompt({
     message: "Choose a command:",
     options: [
-      { name: "Greet Someone", value: "greet" },
+      {
+        name: colors.bold.rgb24("Greet someone", 0xff3333),
+        value: "greet",
+      },
       { name: "Show Help", value: "help" },
       { name: "Exit", value: "exit" },
     ],
@@ -43,5 +48,5 @@ while (true) {
     command.parse([value]);
   }
 
-  console.log(); // Add a blank line for better readability
+  console.log(""); // Add a blank line for better readability
 }
